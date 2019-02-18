@@ -39,7 +39,8 @@ namespace SolutionColor
 
         public static readonly Guid ToolbarCommandSetGuid = new Guid("00d80876-3407-4666-bf62-7262028ea83b");
 
-        public SolutionColorSettingStore Settings { get; private set; } = new SolutionColorSettingStore();
+        public SolutionColorSettingStore Settings { get { return _settings; } private set { _settings = value; } } 
+        private SolutionColorSettingStore _settings = new SolutionColorSettingStore();
 
 
         /// <summary>

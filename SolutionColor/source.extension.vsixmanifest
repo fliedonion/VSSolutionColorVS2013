@@ -2,7 +2,7 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="SolutionColor.anreich.d397fb44-c923-44a9-819a-7daebd931185" Version="1.4" Language="en-US" Publisher="Andreas Reich" />
-    <DisplayName>SolutionColor</DisplayName>
+    <DisplayName>SolutionColorVS2013</DisplayName>
     <Description xml:space="preserve">Pick a different titlebar color depending on the current sln file you're working on.</Description>
     <License>license.txt</License>
     <Icon>Resources\icon.png</Icon>
@@ -10,6 +10,7 @@
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[11.0,16.0)" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.Pro" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
